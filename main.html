@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <title>Table Example</title>
+    <style>
+    	background {
+         width: 1100px
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
 
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .column-width-200 {
+            width: 200px;
+        }
+
+        .column-width-600 {
+            width: 600px;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<table>
+    <tr>
+        <th class="column-width-200">First Column</th>
+        <th class="column-width-600">Middle Column</th>
+        <th class="column-width-200">Last Column</th>
+    </tr>
+    <tr>
+        <td><img src="image1.jpg" alt="Image 1" width="200" height="auto"></td>
+        <td>Text Content</td>
+        <td><img src="image2.jpg" alt="Image 2" width="200" height="auto"></td>
+    </tr>
+    <tr>
+        <td><img src="image3.jpg" alt="Image 3" width="200" height="auto"></td>
+        <td>Text Content</td>
+        <td><img src="image4.jpg" alt="Image 4" width="200" height="auto"></td>
+    </tr>
+</table>
 
 </body>
-
 </html>
